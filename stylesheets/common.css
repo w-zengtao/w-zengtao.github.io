@@ -1,7 +1,64 @@
+body {
+    background: #ddd;
+    font-family: ‎Sans-serif;
+    color: #333;
+    padding-top: 0.5em;
+}
+
+
+.wy_home ul li {
+	display: inline;
+	margin: 0.5em;
+}
+  
+.sns_avatar  {
+	-moz-border-radius: 50%;
+  	-webkit-border-radius: 50%;
+  	border-radius: 50%;
+  	overflow:hidden
+  	-webkit-animation: my_sns 5s;
+  	-webkit-animation-fill-mode: forwards;
+}
+
+
+.avatar {
+	width: 6em;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
 .site-footer {
 	display: block;
 	position: fixed;
 	bottom: 0.5em;
 	right: 1em;
 	font-size: 0.8em;
+}
+
+.main-content {
+	line-height: 1;
+	text-align: center;
+	font-size: 1em;
+	position: relative;
+	-webkit-animation: myfirst 5s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes myfirst {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+  }
+}
+
+@-webkit-keyframes my_sns {
+  from {
+    -webkit-transform: rotate 0deg;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }

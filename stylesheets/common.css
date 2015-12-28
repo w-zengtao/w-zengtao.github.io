@@ -7,19 +7,9 @@ body {
 
 
 .wy_home ul li {
-	display: inline;
+	display: inline-block;
 	margin: 0.5em;
 }
-  
-.sns_avatar  {
-	-moz-border-radius: 50%;
-  	-webkit-border-radius: 50%;
-  	border-radius: 50%;
-  	overflow:hidden
-  	-webkit-animation: my_sns 5s;
-  	-webkit-animation-fill-mode: forwards;
-}
-
 
 .avatar {
 	width: 6em;
@@ -28,12 +18,12 @@ body {
 	border-radius: 50%;
 }
 
-.site-footer {
-	display: block;
-	position: fixed;
-	bottom: 0.5em;
-	right: 1em;
-	font-size: 0.8em;
+.sns_avatar  {
+	-moz-border-radius: 50%;
+  	-webkit-border-radius: 50%;
+  	border-radius: 50%;
+	-webkit-animation: my_sns 5s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .main-content {
@@ -45,18 +35,26 @@ body {
 	-webkit-animation-fill-mode: forwards;
 }
 
+.site-footer {
+	display: block;
+	position: fixed;
+	bottom: 0.5em;
+	right: 1em;
+	font-size: 0.8em;
+}
+
 @-webkit-keyframes myfirst {
   from {
-    top: 0px;
+    top: 0em;
   }
   to {
-    top: 200px;
+    top: 10em;
   }
 }
 
 @-webkit-keyframes my_sns {
   from {
-    -webkit-transform: rotate 0deg;
+    -webkit-transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);

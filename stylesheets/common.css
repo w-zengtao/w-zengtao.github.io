@@ -1,21 +1,32 @@
 body {
     background: #ddd;
-    font-family: ‎Sans-serif;
     color: #333;
     padding-top: 0.5em;
 }
 
 
+.wy_home ul {
+	width: 200px;
+	margin: 0px auto;
+}
+
 .wy_home ul li {
 	display: inline-block;
 	margin: 0.5em;
+	float: left;
+	text-align: center;
 }
+
 
 .avatar {
 	width: 6em;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
+}
+
+.sns_list {
+	margin-top: 20px;
 }
 
 .sns_avatar  {
@@ -27,9 +38,7 @@ body {
 }
 
 .main-content {
-	line-height: 1;
 	text-align: center;
-	font-size: 1em;
 	position: relative;
 	-webkit-animation: myfirst 5s;
 	-webkit-animation-fill-mode: forwards;

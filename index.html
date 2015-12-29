@@ -1,49 +1,23 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>我不管 我最帅</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/common.css" media="screen">
-  </head>
-  <body>
-	<section class="page-header">
-			
-	</section>
-    
-	<section class="main-content">
-		<div class="wy_home">
-			<div>
-				  <image class="avatar" src="./resources/images/zt.jpg" width="120" height="120">
-			    <h1> Hi, I'm Tao.Zeng </h1>
-					<div> A Boy Filled With Romantic & Fantasy in WuHan, China </div>
-			    
-          <div class="sns_list">
-			      <ul>
-			      	
-              <li> <a href="https://github.com/w-zengtao" target="_blank"> <img src="./resources/images/github.png" alt="github" class="sns_avatar" width="24" height="24"> </a> </li>
-							<li> <a href="https://ruby-china.org/so_zengtao" target="_blank"> <img src="./resources/images/ruby.png" alt="github" class="sns_avatar" width="24" height="24"> </a> </li>
-              <li> <a href="http://stackoverflow.com/users/2745074/%E6%88%91%E5%A4%A9%E7%9C%9F%E6%97%A0%E9%82%AA" target="_blank"> <img src="./resources/images/stack.png" alt="github" class="sns_avatar" width="24" height="24"> </a> </li>
-              <li> <a href="http://weibo.com/izem/home?wvr=5&lf=reg" target="_blank"> <img src="./resources/images/weibo.jpg" alt="github" class="sns_avatar" width="24" height="24"> </a> </li>
-			      
-            </ul>
-			    </div>
-					
-			    <div class="root_to_home_page">
-			    </div>
+---
+layout: default
+---
 
-			  </div>
-			</div>
-		</div>
-						
-		<footer class="site-footer">
-			© 2015-2016
-			<a href="mailto:so.zengtao@gmail.com "> ZengTao </a>
-			All Rights Reserved
-			<br />
-		</footer>
-	</section>  
-  </body>
-</html>
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

@@ -1,3 +1,26 @@
+/*----------------------------------------------------------------------------*/
+#navigation {
+  position: absolute;
+  top: 55%;
+  margin-top: -80px;
+  right: 18px;
+  text-align: center;
+  -webkit-transition: opacity 0.6s 0s;
+}
+#navigation > li {
+  list-style: none;
+  width: 5px;
+  height: 5px;
+  margin: 1px 1px 24px 1px;
+  background: #000;
+  -webkit-border-radius: 6px;
+  -webkit-transition: All 0.3s 0s;
+  opacity: 0.2;
+}
+#navigation > li.page_on {
+  opacity: 1;
+}
+/*----------------------------------------------------------------------------*/
 .screen-line {
     border-top: solid 1px #d5dfe7;
     margin: auto;
@@ -6,10 +29,7 @@
 .screen {
     overflow: hidden;
 }
-
-/**
- * Site welcome page
- */
+/*----------------------------------------------------------------------------*/
 .wy_home {
 	text-align: center;
 	position: relative;
@@ -51,7 +71,6 @@
 	}
 }
 
-
 @-webkit-keyframes myfirst {
   from {
     top: 0em;
@@ -69,11 +88,8 @@
     -webkit-transform: rotate(360deg);
   }
 }
-
-/**
- * Site info page
- */
-
+/*----------------------------------------------------------------------------*/
  #info-content {
   background: #d5dfe7;
  }
+ /*----------------------------------------------------------------------------*/

@@ -1,29 +1,25 @@
 .screen-line {
     border-top: solid 1px #d5dfe7;
-    // width: 1200px;
     margin: auto;
-} 
+}
 
 .screen {
-    min-height: 100px;
-    width: auto;
-    margin: auto;
     overflow: hidden;
 }
 
 /**
  * Site welcome page
  */
-#main-content {
+.wy_home {
 	text-align: center;
 	position: relative;
 	-webkit-animation: myfirst 5s;
 	-webkit-animation-fill-mode: forwards;
-	
+
 	ul {
 		width: 200px;
 		margin: 0px auto;
-		
+
 		li {
 			display: inline-block;
 			margin: 0.5em;
@@ -79,7 +75,5 @@
  */
 
  #info-content {
-  background: #000;
-  color: #333;
-  width: 1920px;
+  background: #d5dfe7;
  }

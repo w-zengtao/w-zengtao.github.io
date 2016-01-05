@@ -27,7 +27,7 @@
 }
 
 .screen {
-    overflow: hidden;
+    // overflow: hidden;
 }
 /*----------------------------------------------------------------------------*/
 .wy_home {
@@ -94,10 +94,11 @@
  }
 
  .info-content-person-detail {
-   width: 22em;
+   width: 20em;
    height: 800px;
    margin-top: 9em;
    margin-left: 2em;
+   margin-right: 1em;
    float: left;
    text-align: center;
    .avatar {
@@ -121,10 +122,34 @@
    }
  }
 
+ .info-content-job-detail {
+   float: left;
+   ul {
+     li {
+       height: auto;
+       list-style: none;
+       .circle {
+         border: 2px solid #000;
+         border-radius: 50%;
+         width: 12px;
+         height: 12px;
+
+         .circle-mini {
+           border: 1px solid #000;
+           background-color: #000;
+           border-radius: 50%;
+           width: 6px;
+           height: 6px;
+           margin: 1.5px 0 0 1.5px;
+         }
+       }
+     }
+   }
+ }
 
  #info-split-top {
    margin-top: 100px;
-   margin-left: 24.5em;
+   margin-left: 23.4em;
    width: 20px;
    height: 20px;
    background: #000;
@@ -136,8 +161,9 @@
  #info-split-line {
    border-left: 2px dashed #000;
    opacity: 0.4;
-   margin-left: 25em;
+   margin-left: 1em;
    margin-top: 20px;
    height: 500px;
+   float: left;
  }
  /*----------------------------------------------------------------------------*/

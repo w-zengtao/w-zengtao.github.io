@@ -27,7 +27,7 @@
 }
 
 .screen {
-    // overflow: hidden;
+    overflow: hidden;
 }
 /*----------------------------------------------------------------------------*/
 .wy_home {
@@ -124,45 +124,59 @@
 
  .info-content-job-detail {
    float: left;
+   margin-top: 120px;
    ul {
      li {
        height: auto;
        list-style: none;
-       .circle {
+       span {
+         margin-top: -1em;
+       }
+       .circle-skill {
+         margin-top: 1em;
+         margin-left: -2.5em;
          border: 2px solid #000;
          border-radius: 50%;
          width: 12px;
          height: 12px;
 
-         .circle-mini {
+         .circle-skill-mini {
+           float: left;
            border: 1px solid #000;
-           background-color: #000;
+           background-color: gray;
            border-radius: 50%;
            width: 6px;
            height: 6px;
            margin: 1.5px 0 0 1.5px;
          }
        }
+       .circle {
+         margin-top: 1em;
+         margin-left: -2.5em;
+         border: 2px solid black;
+         border-radius: 50%;
+         width: 14px;
+         height: 14px;
+
+         .circle-mini {
+           float: left;
+           border: 1px solid black;
+           background-color: blue;
+           border-radius: 50%;
+           width: 8px;
+           height: 8px;
+           margin: 2px 0 0 2px;
+         }
+       }
      }
    }
- }
-
- #info-split-top {
-   margin-top: 100px;
-   margin-left: 23.4em;
-   width: 20px;
-   height: 20px;
-   background: #000;
-   opacity: 0.4;
-   -webkit-border-radius: 100px;
-   -webkit-transition: All 0.3s 0s;
  }
 
  #info-split-line {
    border-left: 2px dashed #000;
    opacity: 0.4;
    margin-left: 1em;
-   margin-top: 20px;
+   margin-top: 130px;
    height: 500px;
    float: left;
  }

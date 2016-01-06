@@ -69,6 +69,10 @@
 		margin-top: 50px;
 		font-size: 2em;
 	}
+
+  div {
+    margin-top: 3em;
+  }
 }
 
 @-webkit-keyframes myfirst {
@@ -89,8 +93,12 @@
   }
 }
 /*----------------------------------------------------------------------------*/
- #info-content {
+#about-me {
   background: #d5dfe7;
+}
+/*----------------------------------------------------------------------------*/
+ #info-content {
+  background: #D4EDF4;
  }
 
  .info-content-person-detail {
